@@ -17,6 +17,19 @@ Site que cria a estrutura de um projeto utilizando o Spring Boot
   - Extension Pack for Spring Boot (Pivotal)
 - Banco de dados (MariaDB)
 
+## Passo a passo para criar um novo projeto Springboot no VScode
+- Criar uma pasta no disco do computador
+- Abrir a pasta no VSCode usando a opção File -> Open Folder
+- Ctrl + Shift + P
+= Digitar Spring Initializer: Create a Maven Project
+- Qual a versão do Spring Framework(a ultima)
+- Qual a linguagem Java
+- Qual o pacote base do projeto: com.br(dominio da empresa)
+
+## Configuração para conexão no bando de dados relacional
+- Adicionar dependencias( Spring data JPA, H2, MariaDB JDBC Driver)
+- Configurar a conexão da aplicação com o banco de dados no arquivo application.properties.
+
 ## Estrutura do projeto
 - Pacote src: todo o código da aplicação (Java, HTML, CSS, JS)
 - Pacote target: código compilado e gerado pelo Maven
@@ -28,3 +41,6 @@ Site que cria a estrutura de um projeto utilizando o Spring Boot
 ## Executar a aplicação
 - Encontrar o Spring Boot Dashboard
 - Clicar no icone de Play do lado do nome do projeto
+
+
+insert into cliente(nome, endereco, sexo) values ('zeze', 'lalalala', 'masculino')

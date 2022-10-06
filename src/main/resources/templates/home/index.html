@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head th:include="layout :: head"></head>
+
+    <body>
+        <nav th:replace="layout :: menu"></nav>
+        <main class="container">
+            <h1>Projeto para testar conhecimentos básicos</h1>
+            <p>Este projeto tem como objetivo principal demonstrar as habilidades em criação de um CRUD utitilizando o Spring Framework.</p>
+            <!-- Aqui -->
+            <hr>
+            <h2>Linguagens utilizadas</h2>
+            <br>
+            <dl>
+                <dt>JAVA 11</dt>
+                <br>
+                <dt>Spring framewrok</dt>
+                    <dd>O Spring Framework é um framework de aplicação e container de inversão de controle para a plataforma Java</dd>
+                <br>
+                <dt>Thymeleaf</dt>
+                    <dd>O Thymeleaf é uma template engine para projetos Java que facilita a criação de páginas HTML.</dd>
+                <br>
+                <dt>HTML 5</dt>
+                <br>
+                <dt>Bootstrap 5.0</dt>
+                <br>
+                <dt>Banco de dados relacional (h2)</dt>
+                    <dd>H2 é um sistema de gerenciamento de banco de dados relacional escrito em Java.
+                         Ele pode ser incorporado em aplicativos Java ou executado no modo cliente-servidor.</dd>
+            </dl>
+        </main>
+        <footer th:include="layout :: footer"></footer>
+    </body>
+</html>

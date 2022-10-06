@@ -1,0 +1,5 @@
+insert into cliente (nome, endereco, sexo) values ('Luiz', 'Rua Habib Farah - 80', 'Masculino')
+insert into cliente (nome, endereco, sexo) values ('Karim', 'Guilherme Costa', 'Masculino')
+insert into cliente (nome, endereco, sexo) values ('Herick', 'Rua Habib Farah - 130', 'Masculino')
+insert into cliente (nome, endereco, sexo) values ('Igor', 'Rua do bombeiro - 80', 'Masculino')
+insert into cliente (nome, endereco, sexo) values ('Samira', 'Rua Hildo Novaes', 'Femenino')
