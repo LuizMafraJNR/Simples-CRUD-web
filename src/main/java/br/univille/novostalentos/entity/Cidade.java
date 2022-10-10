@@ -11,7 +11,7 @@ import lombok.Data;
 @Data
 public class Cidade {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id; //Unique - torna o campo parte de uma chave única (traduzindo nao permite que haja dois registros com valores iguais nesta coluna)
     @Column(length = 1000, unique = true)
     private String nome;
 }

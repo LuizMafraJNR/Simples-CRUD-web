@@ -16,8 +16,7 @@ public class CidadeServiceImp implements CidadeService{
     
     @Override
     public List<Cidade> getAll() {
-        var listaCidades = cidadeRepository.findAll();
-        return listaCidades;
+        return cidadeRepository.findAll();
     }
 
     @Override

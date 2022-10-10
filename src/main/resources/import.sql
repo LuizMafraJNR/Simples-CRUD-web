@@ -3,3 +3,9 @@ insert into cliente (nome, endereco, sexo) values ('Karim', 'Guilherme Costa', '
 insert into cliente (nome, endereco, sexo) values ('Herick', 'Rua Habib Farah - 130', 'Masculino')
 insert into cliente (nome, endereco, sexo) values ('Igor', 'Rua do bombeiro - 80', 'Masculino')
 insert into cliente (nome, endereco, sexo) values ('Samira', 'Rua Hildo Novaes', 'Femenino')
+
+insert into cidade (nome) values ('Joinville')
+insert into cidade (nome) values ('Gramado')
+insert into cidade (nome) values ('Espirito Santo')
+insert into cidade (nome) values ('Belem')
+insert into cidade (nome) values ('Bahia')
