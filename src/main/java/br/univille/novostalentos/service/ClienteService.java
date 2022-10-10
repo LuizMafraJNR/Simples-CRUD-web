@@ -8,4 +8,5 @@ public interface ClienteService {
     List<Cliente> getAll();
     Cliente save(Cliente cliente);
     Cliente findById(Long id);
+    void delete(Long id);
 }
