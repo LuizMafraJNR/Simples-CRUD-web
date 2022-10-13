@@ -24,17 +24,16 @@
                     </p> -->
 
                     <p>
-                        <a type="button" data-bs-toggle="collapse"
-                            th:attr="data-target=${umProduto.id}"
-                            th:id="${umProduto.id}"
-                            data-bs-target="#collapseWidthExample" aria-expanded="false"
-                            aria-controls="collapseWidthExample">
-                            Descrição
+                        <a type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Descrição
                         </a>
                     </p>
                     <div>
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample"
-                            th:attr="id=${umProduto.id}">
+                        <div class="collapse collapse-horizontal"
+                            id="collapseWidthExample">
                             <div class="card card-body">
                                 <p class="card-text" th:text="${umProduto.descricao}"></p>
                             </div>
