@@ -32,8 +32,7 @@ public class ClienteController {
     }
     
     @PostMapping(params = "form")
-    public ModelAndView save(Cliente cliente){
-        System.out.println(cliente.getNome());
+    public ModelAndView save(Cliente cliente){;
         
         service.save(cliente);
 

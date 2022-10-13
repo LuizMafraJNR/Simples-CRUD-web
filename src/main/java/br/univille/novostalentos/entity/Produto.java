@@ -20,6 +20,7 @@ public class Produto {
     private String nome;
     @Column(length = 1000)
     private String descricao;
+    @Column(length = 1000)
+    private String urlImagem;
     private BigDecimal valor;
-
 }
