@@ -1,7 +1,10 @@
 package br.univille.novostalentos.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,8 +35,12 @@ public class ClienteController {
     }
     
     @PostMapping(params = "form")
-    public ModelAndView save(Cliente cliente){;
-        
+    public ModelAndView save(@Valid Cliente cliente,
+                            BindingResult result){ // Metodo para pegar o erro
+    // Se tiver erro, volte para a pagina do form.
+        if(result.hasErrors()){
+            return new ModelAndView("cliente/form", "cliente",cliente);
+        }
         service.save(cliente);
 
         return new ModelAndView("redirect:/clientes");
