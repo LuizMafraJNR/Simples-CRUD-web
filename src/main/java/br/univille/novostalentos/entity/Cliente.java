@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.Data;
 
 @Data
@@ -23,6 +25,7 @@ public class Cliente {
     private String endereco;
     private String sexo;
     @Temporal(value = TemporalType.DATE) // PARA ACEITAR APENAS DATA
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date dataNascimento;
     
 }

@@ -1,8 +1,8 @@
-insert into cliente (nome, endereco, sexo) values ('Luiz', 'Rua Habib Farah - 80', 'Masculino')
-insert into cliente (nome, endereco, sexo) values ('Karim', 'Guilherme Costa', 'Masculino')
-insert into cliente (nome, endereco, sexo) values ('Herick', 'Rua Habib Farah - 130', 'Masculino')
-insert into cliente (nome, endereco, sexo) values ('Igor', 'Rua do bombeiro - 80', 'Masculino')
-insert into cliente (nome, endereco, sexo) values ('Samira', 'Rua Hildo Novaes', 'Femenino')
+insert into cliente (nome, endereco, sexo, data_nascimento) values ('Luiz', 'Rua Habib Farah - 80', 'Masculino','2002-10-10-')
+insert into cliente (nome, endereco, sexo, data_nascimento) values ('Karim', 'Guilherme Costa', 'Masculino','2002-10-10')
+insert into cliente (nome, endereco, sexo, data_nascimento) values ('Herick', 'Rua Habib Farah - 130', 'Masculino','2002-10-10')
+insert into cliente (nome, endereco, sexo, data_nascimento) values ('Igor', 'Rua do bombeiro - 80', 'Masculino','2002-10-10')
+insert into cliente (nome, endereco, sexo, data_nascimento) values ('Samira', 'Rua Hildo Novaes', 'Femenino','2002-12-28')
 
 insert into cidade (nome) values ('Joinville')
 insert into cidade (nome) values ('Gramado')
