@@ -7,8 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Data;
-@Entity
 @Data
+@Entity
 public class Cidade {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; //Unique - torna o campo parte de uma chave única (traduzindo nao permite que haja dois registros com valores iguais nesta coluna)
