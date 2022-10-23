@@ -33,6 +33,7 @@
                         class="form-control" id="numValor">
                     
                     <label for="cidade">Cidade Origem</label>
+                    <!-- th:field foi pego da relação cliente/cidade -->
                     <select name="cidade" class="form-select" th:field="*{cidadeOrigem}"
                      id="">
                         <option th:value="${umaCidade.id}"

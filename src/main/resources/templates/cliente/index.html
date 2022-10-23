@@ -29,6 +29,7 @@
                             th:text="${#dates.format(umCliente.dataNascimento, 'dd/MM/yyyy')}"></td>
                         <td th:unless="${umCliente.dataNascimento}">Não informada</td>
                         <!-- Tem q usar o meotod to String na classe cidade para vir o nome e dar um return do getNome lá. -->
+                        <!-- Ou coloque o final da variavel com uma "?" e depois passe o atributo mais especifico para se caso não exister e nao quebrar aplicação -->
                         <td th:text="${umCliente.cidadeResidencia?.nome}"></td>
                         <td>
                           <a th:href="@{'/clientes/alterar/' + ${umCliente.id}}" class="btn btn-warning">Alterar</a>
