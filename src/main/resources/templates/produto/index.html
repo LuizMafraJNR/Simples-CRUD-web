@@ -42,6 +42,7 @@
 
                     <p th:text="${'R$ '+#numbers.formatDecimal(umProduto.valor,2,'POINT',2,'COMMA')}">Valor do produto
                     </p>
+                    <p>Cidade de Origem: <span th:text="${umProduto.cidadeOrigem?.nome}"></span></p>
 
                     
                             <a href="#" class="btn btn-primary">Comprar</a>

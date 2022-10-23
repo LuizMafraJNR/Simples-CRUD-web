@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import lombok.Data;
 
@@ -23,4 +24,6 @@ public class Produto {
     @Column(length = 1000)
     private String urlImagem;
     private BigDecimal valor;
+    @ManyToOne
+    private Cidade cidadeOrigem;
 }

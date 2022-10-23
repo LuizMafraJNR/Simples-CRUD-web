@@ -1,6 +1,5 @@
 package br.univille.novostalentos.entity;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 import javax.persistence.Column;

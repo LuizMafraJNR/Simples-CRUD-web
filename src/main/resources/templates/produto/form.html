@@ -31,6 +31,14 @@
                     <label for="numValor">Valor:</label>
                     <input type="number" th:field="*{valor}"
                         class="form-control" id="numValor">
+                    
+                    <label for="cidade">Cidade Origem</label>
+                    <select name="cidade" class="form-select" th:field="*{cidadeOrigem}"
+                     id="">
+                        <option th:value="${umaCidade.id}"
+                                th:each="umaCidade : ${listaCidades}" 
+                                th:text="${umaCidade.nome}"></option>
+                    </select>
 
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
