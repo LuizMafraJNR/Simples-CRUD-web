@@ -14,4 +14,8 @@ public class Cidade {
     private Long id; //Unique - torna o campo parte de uma chave única (traduzindo nao permite que haja dois registros com valores iguais nesta coluna)
     @Column(length = 1000, unique = true)
     private String nome;
+
+    public String toString(){
+        return getNome();
+    }
 }

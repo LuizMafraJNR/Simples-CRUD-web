@@ -24,11 +24,11 @@
 
                 <div class="form-group">
                     <label for="txtcidade">Cidade</label>
-                    <select class="form-select" name="cidade" id="txtcidade">
-                        <option value="1">Joinville</option>
-                        <option value="2">Jaragua</option>
-                        <option value="3">Florianopolis</option>
-                        <option value="4">Blumenau</option>
+                    <!-- th:field foi pego da relação cliente/cidade -->
+                    <select class="form-select" th:field="*{cidadeResidencia}" name="cidade" id="txtcidade">
+                        <option th:each="umaCidade : ${listaCidades}"
+                         th:text="${umaCidade.nome}"
+                         th:value="${umaCidade.id}"></option>
                     </select>
                 </div>
 
